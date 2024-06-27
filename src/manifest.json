@@ -4,6 +4,7 @@
   "description": "This extension adds a simple button to your Spaces toolbar that opens in a new tab, providing you with one-click access to Zulip.",
   "version": "0.1",
   "author": "gersonjferreira",
+  "homepage_url": "https://github.com/gersonjferreira/Zulip-Thunderbird",
   "browser_specific_settings": {
     "gecko": {
       "id": "gersonjferreira.zulip@addons.thunderbird.net",
