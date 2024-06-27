@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Zulip - Quick Access",
+  "description": "This extension adds a simple button to your Spaces toolbar that opens in a new tab, providing you with one-click access to Zulip.",
+  "version": "0.1",
+  "author": "gersonjferreira",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "gersonjferreira.zulip@addons.thunderbird.net",
+      "strict_min_version": "106.0"
+    }
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "icons": {
+    "32": "zulip.svg"
+  },
+  "background": {
+    "scripts": [
+      "redirect.js"
+    ]
+  },
+  "options_ui": {
+      "page": "options.html",
+      "open_in_tab": false,
+      "browser_style": true
+    }
+}
+
