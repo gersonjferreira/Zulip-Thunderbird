@@ -4,6 +4,8 @@
 window.addEventListener("click", clickhandler);
     
 function clickhandler(event) {
+    if (event.target.tagName !== "A") return;
+    
     event.preventDefault();
     event.stopPropagation();
 
