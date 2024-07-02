@@ -21,13 +21,19 @@
   },
   "background": {
     "scripts": [
-      "redirect.js"
+      "redirect.js",
+      "fix-href-background.js"
     ]
   },
   "options_ui": {
-      "page": "options.html",
-      "open_in_tab": false,
-      "browser_style": true
-    }
+    "page": "options.html",
+    "open_in_tab": false,
+    "browser_style": true
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "run_at": "document_end",
+    "js": ["fix-href-content-script.js"]
+  }]
 }
 
